@@ -8,7 +8,7 @@ const Home = () => {
 	if (isLoading) {
 		return (
 			<View style={styles.loadingContainer}>
-				<Text>Loading...</Text>
+				<Text color={"primary.50"}>Loading...</Text>
 			</View>
 		);
 	}

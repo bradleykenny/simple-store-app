@@ -1,4 +1,4 @@
-import { Image, Text, View } from "native-base";
+import { Heading, Image, View } from "native-base";
 import { Product } from "../../models/product";
 import styles from "./styles";
 
@@ -8,14 +8,17 @@ interface Props {
 
 const Card = (props: Props) => {
 	const { product } = props;
+	const imageSize = 20;
 	return (
 		<View style={styles.cardContainer}>
-			<Text>{product.title}</Text>
 			<Image
+				style={styles.image}
 				source={{ uri: product.images[product.images.length - 1] }}
 				alt="Some picture"
-				size={"sm"}
+				height={imageSize}
+				width={imageSize}
 			/>
+			<Heading color={"primary.50"}>{product.title}</Heading>
 		</View>
 	);
 };

@@ -8,6 +8,14 @@ const styles = StyleSheet.create({
 		marginBottom: 10,
 		marginHorizontal: 10,
 	},
+	image: {
+		position: "absolute",
+		left: 0,
+		top: 0,
+	},
+	productTitle: {
+		paddingLeft: 200,
+	},
 });
 
 export default styles;
